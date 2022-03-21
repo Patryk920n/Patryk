@@ -60,11 +60,11 @@ else:
     print("liczba ", f, " jest najwieksza")
 
 # zad 7
+liczby = [5,3,float(12),float(5)]
+for x in liczby:
+    x=x**2
+    print(x)
 
-# liczby = [5,3,float(12),float(5)]
-# for x in liczby:
-#
-# print(liczby)
 
 #zad 8
 z=0
