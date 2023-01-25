@@ -1,0 +1,76 @@
+Oszacować średnią metodą przedziałową przy wspóczynniku ufności
+statystyki podstawowe -> statystyki opisowe -> odznaczasz wszystko + przedział ufn. średniej
+
+6 losowo wybranych przy współczynniku ufności 
+statystyki podstawowe -> statystyki opisowe -> odznaczasz wszystko + PU dla oddch. std.
+
+przedziały (0,2-0,4)
+excel -> średnia przedziału (0,3) * liczba doświadczeń(dla ułatwienia l)
+x(średnia) = SUMA(średnia przedziału (0,3) * liczba doświadczeń)/1000 (liczba wszystkich dośiwadczeń n) 
+x ma być 1 więc napisz go tak: $E$13
+
+((średnia przedzialu) *  x)^2 * średnia przedziału (0,3) * ilosc doswiadczen
+
+s = PIERWIASTEK(SUMA(wszystkiego u góry)/999)
+
+u = ROZKŁ.NORMALNY.S.ODWR(1-0,05(czyli alfa)/2)
+
+a = x-u*(s/PIERWIASTEK(1000))
+
+b = x+u*(s/PIERWIASTEK(1000))
+
+
+	Kwantyl dolny - co najmniej 25% jednostek ma wartosci cechy 	równee kwantylowi pierwszego lub niże a co najmniej 75% 	równe lub wyższe
+
+	Kwantyl górny - co najmniej 75% jednostek ma wartosci cechy 	równee kwantylowi pierwszego lub niże a co najmniej 25% 	równe lub wyższe
+
+
+Na poziomie istotności a=0.05 mozna twierdzic ze waga owocow ma rozkład normalny
+wykresy 2W -> Wykres normalności zaznaczasz test Shapiro-Wilka
+jeżeli p na dole wykresu większe od a ma rozkład normalny
+
+
+Przyjmując poziom istotności a 0.05 zweryfikowac hipoteze ze średni czas zycia jest wiekszy niz 4h
+wykresy 2W -> Wykres normalności zaznaczasz test Shapiro-Wilka
+jeżeli p na dole wykresu większe od a ma rozkład normalny
+jeżeli ma rozkład 
+Statystyki podstawowe -> test t dla pojedynczej próby 
+testuj średnie względem 4
+
+
+Na poziomie istotności a=0.05 zweryfikoweac hipoteze o jednakowym czasie dla OBU grup (2 grupy)
+wykresy 2W -> Wykres normalności zaznaczasz test Shapiro-Wilka i wiele wykresó na 1 rysunku
+jeżeli p na dole wykresu większe od a ma rozkład normalny
+jeżeli ma rozkład
+Statystyki podstawowe -> test t dla prób zależnych(wdg. zmiennych)
+test Laveres i test Browna
+p, p Laveresa, p Browna jest wieksze od a jest git
+
+
+Temperatura, czy mozna uznac że średnia temperatura w tym pomieszczeniu spełania normę, przyjąc poziom istotnosci a = 0.05 (zakładamy rozkład normalny)
+Statystyka podstawowa -> inne testy istotności 
+zaznaczam średnia z pomiarow 1 a śrrenia z populacji 2
+średnia 1 
+średnia 2 temp bazowa
+
+
+Zbadać czy średnia ocen na 4 roku zależy od średniej ocen na 1 orku, przeanalizować istotności tej zależności
+Statystyki podstawowe -> macierze korelacji 2W rzut
+korelacja r więcej niż .5 to bardzo skorelowana
+
+
+zbadać czy stężenie ozonu zależy od wysokości, przeanalizować istotność tej zależności
+zależność oszacowanie liniowej funkcji regreski cechy y względem cechy x
+Statystyki podstawowe -> macierze korelacji 2W rzut
+
+
+Utworzyć szereg rozdzielczy przedziałowy i histogram, wyznaczyć podstawowe miary statystyczne oraz podac ich interpretację ,sporzadzić wykres ramka-wąsy.
+Statystyka opisowa minimum i maksimum
+max-min/pierwiastek(ilosc miejsc)=3
+Tabele liczności -> więcej krok co 3
+i usuwamy w tabeli ostatni wiersz
+Tabele liczności -> histogram
+statystyki opisowe średnia suma miediana moda wariancja skośnoś
+dolny i górny kwantyl
+wykresy -> ramka-> więcej dane surowe
+w razie zmiany ppm i opcje wykresu
